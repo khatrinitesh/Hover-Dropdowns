@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	
+	<nav>
+		<ul class="list_index">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li class="dropdown"><a href="#">Portfolio</a>
+				<ul class="menu_box">
+					<li>
+						<h3>Portfolio 1</h3>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+					</li>
+					<li>
+						<h3>Portfolio 2</h3>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+					</li>
+					<li>
+						<h3>Portfolio 3</h3>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+						<a href="javascript:void(0)">Portfolio link</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">Service</a>
+				<ul class="menu_box">
+					<li>
+						<h3>Service 1</h3>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+					</li>
+					<li>
+						<h3>Service 2</h3>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+					</li>
+					<li>
+						<h3>Service 3</h3>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+						<a href="javascript:void(0)">Service link</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<script type='text/javascript' src='js/jquery-1.12.0.min.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$(".dropdown").mouseenter(function(){
+				$(".menu_box",this).slideDown();
+			});
+			$(".dropdown").mouseleave(function(){
+				$(".menu_box",this).slideUp();
+			});
+		});
+	</script>
+</body>
+</html>
